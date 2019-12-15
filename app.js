@@ -6,8 +6,6 @@ import apiRouter from './routes/apiRouter';
 import URL from './constants/urls';
 
 import { tokenController } from './controllers/authController';
-import User from './models/user';
-import Result from './models/result';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
