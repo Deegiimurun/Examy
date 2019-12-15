@@ -4,10 +4,7 @@
   "description": "Examy server",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --exec babel-node app.js",
-    "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel -d ./build ./models/exam.js ./models/user.js ./models/result.js ./app.js ./routes/apiRouter.js ./routes/authRouter.js ./controllers/apiController.js ./controllers/apiValidator.js ./controllers/authController.js ./controllers/authValidator.js ./constants/strings.js ./constants/urls.js",
-    "build": "npm run clean && npm run build-babel"
+    "start": "node ./build/app.js"
   },
   "author": "Line",
   "license": "ISC",
